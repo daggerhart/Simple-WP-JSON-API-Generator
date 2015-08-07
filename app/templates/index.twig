@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>{{ page_title }}</title>
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="/app/css/style.css" rel="stylesheet">
+</head>
+<body>
+{% include 'header.twig' %}
+
+<div class="container">
+	<div class="row">
+		<div class="col-xs-12">
+			<div class="page-header">
+				<h1>{{ page_title }}{% if page_subtitle %} <small>{{ page_subtitle }}</small>{% endif %}</h1>
+			</div>
+
+			{% include 'footer.twig' %}
+		</div>
+	</div>
+
+	<form id="generator" 
+	      class="col-xs-12 form-horizontal"
+	      action="/index.php?ajax=download"
+	      method="POST"
+		></form>
+</div>
+
+{# javascript field templates #}
+{% include 'field-templates.twig' %}
+<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.1/lodash.min.js"></script>
+
+<script src="/app/js/app.js"></script>
+</body>
+</html>

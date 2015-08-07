@@ -1,0 +1,17 @@
+.field-show-on {
+    display: none;
+}
+.field-show-on.show {
+    display: block;
+}
+p.description {
+    color: #888;
+    font-style: italic;
+    margin: .5em 0 1em;
+}
+legend {
+    margin-bottom: 0px;
+}
+label[for=downloadAPI] {
+    display: none;
+}
