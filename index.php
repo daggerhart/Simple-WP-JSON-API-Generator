@@ -1,6 +1,9 @@
 <?php
 
 /**
+ * Original
+ *  - https://gist.github.com/daggerhart/eceead9a5ee73eea608e
+ * 
  * Plan
  *  - TWIG for templating in PHP
  *  - lodash for templating in JS

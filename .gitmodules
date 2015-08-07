@@ -1,0 +1,4 @@
+[submodule "vendor/twig"]
+	path = vendor/twig
+	url = https://github.com/twigphp/Twig
+	branch = 1.x
