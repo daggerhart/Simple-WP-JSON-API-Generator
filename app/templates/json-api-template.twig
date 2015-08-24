@@ -54,12 +54,12 @@ class {{ className }} {
 	static public function make_json_data( $post ){
 		// featured image urls
 		$image_id = get_post_thumbnail_id( $post->ID );
-		$image_full  = wp_get_attachment_image_src( $img_id, 'full' );
-		$image_thumb = wp_get_attachment_image_src( $img_id, 'thumbnail' );
+		$image_full  = wp_get_attachment_image_src( $image_id, 'full' );
+		$image_thumb = wp_get_attachment_image_src( $image_id, 'thumbnail' );
 		
 		$item = array(
 			// The global $post object is set, so we can use template tags.
-			// Additionally, we have the object,m so we could get raw data.
+			// Additionally, we have the object, so we could get raw data.
 			'title' => get_the_title(),
 			'title_raw' => $post->post_title,
 			'content' => get_the_content(),
